@@ -48,8 +48,10 @@ public class Main
     int index = 0;
     while (index < str.length())
     {
-      System.out.print(str.substring(index, index + 1));
-      
+      if (index % 3 != 2)
+      {
+        System.out.print(str.substring(index, index + 1));
+      }
       index ++;
     }
   }
